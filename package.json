@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "description": "Find businesses around your location.",
-  "module": "index.ts",
+  "module": "src/index.ts",
   "type": "module",
   "scripts": {
     "dev": "bun run --watch ./src/index.ts",
@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@acpr/rate-limit-postgresql": "^1.4.1",
-    "@api/yelp-developers": "file:.api/apis/yelp-developers",
+    "@api/yelp-developers": "link:@api/yelp-developers",
     "@aws-sdk/client-s3": "^3.575.0",
     "@hono/swagger-ui": "^0.2.2",
     "@hono/zod-openapi": "^0.11.1",
