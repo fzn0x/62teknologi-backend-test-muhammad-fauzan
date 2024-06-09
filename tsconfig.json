@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    // Enable latest features
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "lib": ["ESNext", "DOM"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "allowJs": true,
+
+    // Node mode
+    "moduleResolution": "node",
+    "noEmit": true,
+
+    // Base URL for resolving non-absolute module names
+    "baseUrl": ".",
+
+    // Path mapping
+    "paths": {
+      "@lib/*": ["lib/*"] // Maps all imports starting with "~/" to "./lib/"
+    },
+
+    // json imports
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+
+    // ts-node
+    "esModuleInterop": true,
+
+    // Best practices
+    "strict": true,
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Some stricter flags (disabled by default)
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noPropertyAccessFromIndexSignature": false
+  }
+}

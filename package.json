@@ -1,0 +1,50 @@
+{
+  "name": "business-around-me",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Find businesses around your location.",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch ./src/index.ts",
+    "prod": "prisma migrate deploy && bun run ./src/index.ts",
+    "swagger": "bun run --watch ./src/swagger.ts",
+    "seed": "tsx prisma/seed.ts",
+    "db:migrate": "prisma migrate dev",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prisma": "^5.14.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.11.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@acpr/rate-limit-postgresql": "^1.4.1",
+    "@api/yelp-developers": "file:.api/apis/yelp-developers",
+    "@aws-sdk/client-s3": "^3.575.0",
+    "@hono/swagger-ui": "^0.2.2",
+    "@hono/zod-openapi": "^0.11.1",
+    "@prisma/adapter-pg": "^5.13.0",
+    "@prisma/client": "^5.14.0",
+    "@supabase/supabase-js": "^2.43.1",
+    "@types/pg": "^8.11.6",
+    "dotenv": "^16.4.5",
+    "hono": "^4.4.3",
+    "hono-rate-limiter": "^0.3.0",
+    "pg": "^8.11.5",
+    "xlsx": "^0.18.5",
+    "zod": "^3.23.8"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.9.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "fzn0x"
+}

@@ -1,0 +1,622 @@
+{
+	"info": {
+		"_postman_id": "a67ada41-4c19-4697-b8bf-99a7536226d8",
+		"name": "62teknologi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21592440",
+		"_collection_link": "https://gold-desert-549256.postman.co/workspace/Team-Workspace~7e103958-c6f0-4cfd-8e2c-cd87f5971c3c/collection/21592440-a67ada41-4c19-4697-b8bf-99a7536226d8?action=share&source=collection_link&creator=21592440"
+	},
+	"item": [
+		{
+			"name": "Business Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/business/search?page=1",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"business",
+						"search"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Business Search",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/business/search?page=1&limit=100&filters=%7B%22name%22%3A%22Jolly%22%7D",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"business",
+								"search"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "filters",
+									"value": "%7B%22name%22%3A%22Jolly%22%7D"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "\"d8f13650f62e88672cfa1d79c4402d04f76d07b2\""
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "ratelimit-policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "ratelimit-limit",
+							"value": "100"
+						},
+						{
+							"key": "ratelimit-remaining",
+							"value": "83"
+						},
+						{
+							"key": "ratelimit-reset",
+							"value": "503"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Jun 2024 12:24:30 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2455"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"200\",\n    \"message\": \"Data retrieved\",\n    \"data\": [\n        {\n            \"id\": \"1300\",\n            \"businessUniqId\": \"jHexJKIMOZ4B0v_Ae1OJxw\",\n            \"alias\": \"jolly-berlin\",\n            \"name\": \"Jolly\",\n            \"imageUrl\": \"https://s3-media1.fl.yelpcdn.com/bphoto/JGkn7tspMz5oO7ARvTtewg/o.jpg\",\n            \"isClosed\": false,\n            \"url\": \"https://www.yelp.com/biz/jolly-berlin?adjust_creative=DSj6I8qbyHf-Zm2fGExuug&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DSj6I8qbyHf-Zm2fGExuug\",\n            \"reviewCount\": 90,\n            \"rating\": 4.1,\n            \"latitude\": 52.52048,\n            \"longitude\": 13.3944,\n            \"price\": \"€€\",\n            \"phone\": \"+493020059500\",\n            \"displayPhone\": \"+49 30 20059500\",\n            \"distance\": 1412.503105153802,\n            \"address1\": \"Kupfergraben 4/4A\",\n            \"address2\": \"\",\n            \"address3\": \"\",\n            \"city\": \"Berlin\",\n            \"zipCode\": \"10117\",\n            \"country\": \"DE\",\n            \"state\": \"BE\",\n            \"displayAddress\": [\n                \"Kupfergraben 4/4A\",\n                \"10117 Berlin\",\n                \"Germany\"\n            ],\n            \"reviews\": []\n        },\n        {\n            \"id\": \"961\",\n            \"businessUniqId\": \"ZJVhCAjBeRlzLhgRVVJD5Q\",\n            \"alias\": \"jolly-pumpkin-cafe-and-brewery-ann-arbor-8\",\n            \"name\": \"Jolly Pumpkin Cafe & Brewery\",\n            \"imageUrl\": \"https://s3-media3.fl.yelpcdn.com/bphoto/VNCRpj_ktBG8YIRk_LDvVQ/o.jpg\",\n            \"isClosed\": false,\n            \"url\": \"https://www.yelp.com/biz/jolly-pumpkin-cafe-and-brewery-ann-arbor-8?adjust_creative=DSj6I8qbyHf-Zm2fGExuug&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DSj6I8qbyHf-Zm2fGExuug\",\n            \"reviewCount\": 1029,\n            \"rating\": 3.9,\n            \"latitude\": 42.279168,\n            \"longitude\": -83.748462,\n            \"price\": \"$$\",\n            \"phone\": \"+17349132730\",\n            \"displayPhone\": \"(734) 913-2730\",\n            \"distance\": 652.992471449679,\n            \"address1\": \"311 S Main St\",\n            \"address2\": \"\",\n            \"address3\": \"\",\n            \"city\": \"Ann Arbor\",\n            \"zipCode\": \"48104\",\n            \"country\": \"US\",\n            \"state\": \"MI\",\n            \"displayAddress\": [\n                \"311 S Main St\",\n                \"Ann Arbor, MI 48104\"\n            ],\n            \"reviews\": [\n                {\n                    \"id\": \"81559b44-1a24-47f3-9e65-3770097aeab9\",\n                    \"url\": \"https://www.yelp.com/biz/jolly-pumpkin-cafe-and-brewery-ann-arbor-8?adjust_creative=DSj6I8qbyHf-Zm2fGExuug&hrid=blAdy_TbeKtFgHKfTknWLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_reviews&utm_source=DSj6I8qbyHf-Zm2fGExuug\",\n                    \"text\": \"Jolly Pumpkin is a fun place for a group and has been around for some time in Ann Arbor.  The service was pretty good, but they were out of several drinks...\",\n                    \"rating\": 4,\n                    \"timeCreated\": \"1970-01-01T00:00:00.000Z\",\n                    \"userId\": \"FwGaLeqA7JMzRLvHrJzGRQ\",\n                    \"userProfileUrl\": \"https://www.yelp.com/user_details?userid=FwGaLeqA7JMzRLvHrJzGRQ\",\n                    \"userImageUrl\": \"https://s3-media4.fl.yelpcdn.com/photo/Gk0lvaNPuSO2LWkd4bbotA/o.jpg\",\n                    \"userName\": \"Judy N.\",\n                    \"businessUniqId\": \"ZJVhCAjBeRlzLhgRVVJD5Q\"\n                }\n            ]\n        }\n    ],\n    \"meta\": {\n        \"pagination\": {\n            \"dataCount\": 2,\n            \"totalPage\": 1,\n            \"currentPage\": 1,\n            \"limit\": 100\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Business",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"businessUniqId\": \"ChangeThisEveryTestingUniqRegistrationID\",\r\n    \"alias\": \"test\",\r\n    \"name\": \"test\",\r\n    \"imageUrl\": \"https://dummyimage.com/600x400/000/fff\",\r\n    \"isClosed\": false,\r\n    \"url\": \"https://www.yelp.com/biz/%E9%BC%8E%E6%B3%B0%E8%B1%90-%E9%A6%99%E6%B8%AF-2?adjust_creative=DSj6I8qbyHf-Zm2fGExuug&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DSj6I8qbyHf-Zm2fGExuug\",\r\n    \"reviewCount\": 0,\r\n    \"rating\": 0,\r\n    \"latitude\": -6.868236791875793,\r\n    \"longitude\": 107.54299905061966,\r\n    \"price\": \"$\",\r\n    \"phone\": \"+85227306928\",\r\n    \"displayPhone\": \"+852 2730 6928\",\r\n    \"distance\": 7586.955414171911,\r\n    \"address1\": \"test\",\r\n    \"city\": \"test\",\r\n    \"zipCode\": \"test\",\r\n    \"country\": \"test\",\r\n    \"state\": \"test\",\r\n    \"displayAddress\": [\"test\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/business",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"business"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add Business",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"businessUniqId\": \"ChangeThisEveryTestingUniqRegistrationID\",\r\n    \"alias\": \"test\",\r\n    \"name\": \"test\",\r\n    \"imageUrl\": \"https://dummyimage.com/600x400/000/fff\",\r\n    \"isClosed\": false,\r\n    \"url\": \"https://www.yelp.com/biz/%E9%BC%8E%E6%B3%B0%E8%B1%90-%E9%A6%99%E6%B8%AF-2?adjust_creative=DSj6I8qbyHf-Zm2fGExuug&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DSj6I8qbyHf-Zm2fGExuug\",\r\n    \"reviewCount\": 0,\r\n    \"rating\": 0,\r\n    \"latitude\": -6.868236791875793,\r\n    \"longitude\": 107.54299905061966,\r\n    \"price\": \"$\",\r\n    \"phone\": \"+85227306928\",\r\n    \"displayPhone\": \"+852 2730 6928\",\r\n    \"distance\": 7586.955414171911,\r\n    \"address1\": \"test\",\r\n    \"city\": \"test\",\r\n    \"zipCode\": \"test\",\r\n    \"country\": \"test\",\r\n    \"state\": \"test\",\r\n    \"displayAddress\": [\"test\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/business",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"business"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "\"d3e21501ce74aa98e40bd93feb547d3c6b7cc534\""
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "ratelimit-policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "ratelimit-limit",
+							"value": "100"
+						},
+						{
+							"key": "ratelimit-remaining",
+							"value": "84"
+						},
+						{
+							"key": "ratelimit-reset",
+							"value": "515"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Jun 2024 12:24:17 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "767"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"200\",\n    \"message\": \"Data posted\",\n    \"data\": {\n        \"id\": \"1301\",\n        \"businessUniqId\": \"ChangeThisEveryTestingUniqRegistrationID\",\n        \"alias\": \"test\",\n        \"name\": \"test\",\n        \"imageUrl\": \"https://dummyimage.com/600x400/000/fff\",\n        \"isClosed\": false,\n        \"url\": \"https://www.yelp.com/biz/%E9%BC%8E%E6%B3%B0%E8%B1%90-%E9%A6%99%E6%B8%AF-2?adjust_creative=DSj6I8qbyHf-Zm2fGExuug&amp;utm_campaign=yelp_api_v3&amp;utm_medium=api_v3_business_search&amp;utm_source=DSj6I8qbyHf-Zm2fGExuug\",\n        \"reviewCount\": 0,\n        \"rating\": 0,\n        \"latitude\": -6.868236791875793,\n        \"longitude\": 107.5429990506197,\n        \"price\": \"$\",\n        \"phone\": \"+85227306928\",\n        \"displayPhone\": \"+852 2730 6928\",\n        \"distance\": 7586.955414171911,\n        \"address1\": \"test\",\n        \"address2\": null,\n        \"address3\": null,\n        \"city\": \"test\",\n        \"zipCode\": \"test\",\n        \"country\": \"test\",\n        \"state\": \"test\",\n        \"displayAddress\": [\n            \"test\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Business",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isClosed\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/business/1301",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"business",
+						"1301"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Business",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"isClosed\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/business/1301",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"business",
+								"1301"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "\"6dabdd000c234ae860d51845eedd50d85b4c53a5\""
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "ratelimit-policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "ratelimit-limit",
+							"value": "100"
+						},
+						{
+							"key": "ratelimit-remaining",
+							"value": "79"
+						},
+						{
+							"key": "ratelimit-reset",
+							"value": "438"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Jun 2024 12:25:35 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "767"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"200\",\n    \"message\": \"Data updated\",\n    \"data\": {\n        \"id\": \"1301\",\n        \"businessUniqId\": \"ChangeThisEveryTestingUniqRegistrationID\",\n        \"alias\": \"test\",\n        \"name\": \"test\",\n        \"imageUrl\": \"https://dummyimage.com/600x400/000/fff\",\n        \"isClosed\": true,\n        \"url\": \"https://www.yelp.com/biz/%E9%BC%8E%E6%B3%B0%E8%B1%90-%E9%A6%99%E6%B8%AF-2?adjust_creative=DSj6I8qbyHf-Zm2fGExuug&amp;utm_campaign=yelp_api_v3&amp;utm_medium=api_v3_business_search&amp;utm_source=DSj6I8qbyHf-Zm2fGExuug\",\n        \"reviewCount\": 0,\n        \"rating\": 0,\n        \"latitude\": -6.868236791875793,\n        \"longitude\": 107.5429990506197,\n        \"price\": \"$\",\n        \"phone\": \"+85227306928\",\n        \"displayPhone\": \"+852 2730 6928\",\n        \"distance\": 7586.955414171911,\n        \"address1\": \"test\",\n        \"address2\": null,\n        \"address3\": null,\n        \"city\": \"test\",\n        \"zipCode\": \"test\",\n        \"country\": \"test\",\n        \"state\": \"test\",\n        \"displayAddress\": [\n            \"test\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Business",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/business/1301",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"business",
+						"1301"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Business",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/business/1301",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"business",
+								"1301"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "\"b73d7cef9663bbd6b2f90edf1981f255fe2e01c7\""
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "ratelimit-policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "ratelimit-limit",
+							"value": "100"
+						},
+						{
+							"key": "ratelimit-remaining",
+							"value": "78"
+						},
+						{
+							"key": "ratelimit-reset",
+							"value": "390"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Jun 2024 12:26:23 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "767"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"200\",\n    \"message\": \"Data deleted\",\n    \"data\": {\n        \"id\": \"1301\",\n        \"businessUniqId\": \"ChangeThisEveryTestingUniqRegistrationID\",\n        \"alias\": \"test\",\n        \"name\": \"test\",\n        \"imageUrl\": \"https://dummyimage.com/600x400/000/fff\",\n        \"isClosed\": true,\n        \"url\": \"https://www.yelp.com/biz/%E9%BC%8E%E6%B3%B0%E8%B1%90-%E9%A6%99%E6%B8%AF-2?adjust_creative=DSj6I8qbyHf-Zm2fGExuug&amp;utm_campaign=yelp_api_v3&amp;utm_medium=api_v3_business_search&amp;utm_source=DSj6I8qbyHf-Zm2fGExuug\",\n        \"reviewCount\": 0,\n        \"rating\": 0,\n        \"latitude\": -6.868236791875793,\n        \"longitude\": 107.5429990506197,\n        \"price\": \"$\",\n        \"phone\": \"+85227306928\",\n        \"displayPhone\": \"+852 2730 6928\",\n        \"distance\": 7586.955414171911,\n        \"address1\": \"test\",\n        \"address2\": null,\n        \"address3\": null,\n        \"city\": \"test\",\n        \"zipCode\": \"test\",\n        \"country\": \"test\",\n        \"state\": \"test\",\n        \"displayAddress\": [\n            \"test\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Business",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/business/1300",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"business",
+						"1300"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Business",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/business/1300",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"business",
+								"1300"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "\"8f52d0412303055ce6d8fd046a34442f9a03a8e5\""
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "ratelimit-policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "ratelimit-limit",
+							"value": "100"
+						},
+						{
+							"key": "ratelimit-remaining",
+							"value": "99"
+						},
+						{
+							"key": "ratelimit-reset",
+							"value": "900"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Jun 2024 12:29:49 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "792"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"200\",\n    \"message\": \"Data retrieved\",\n    \"data\": {\n        \"id\": \"1300\",\n        \"businessUniqId\": \"jHexJKIMOZ4B0v_Ae1OJxw\",\n        \"alias\": \"jolly-berlin\",\n        \"name\": \"Jolly\",\n        \"imageUrl\": \"https://s3-media1.fl.yelpcdn.com/bphoto/JGkn7tspMz5oO7ARvTtewg/o.jpg\",\n        \"isClosed\": false,\n        \"url\": \"https://www.yelp.com/biz/jolly-berlin?adjust_creative=DSj6I8qbyHf-Zm2fGExuug&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DSj6I8qbyHf-Zm2fGExuug\",\n        \"reviewCount\": 90,\n        \"rating\": 4.1,\n        \"latitude\": 52.52048,\n        \"longitude\": 13.3944,\n        \"price\": \"€€\",\n        \"phone\": \"+493020059500\",\n        \"displayPhone\": \"+49 30 20059500\",\n        \"distance\": 1412.503105153802,\n        \"address1\": \"Kupfergraben 4/4A\",\n        \"address2\": \"\",\n        \"address3\": \"\",\n        \"city\": \"Berlin\",\n        \"zipCode\": \"10117\",\n        \"country\": \"DE\",\n        \"state\": \"BE\",\n        \"displayAddress\": [\n            \"Kupfergraben 4/4A\",\n            \"10117 Berlin\",\n            \"Germany\"\n        ],\n        \"reviews\": []\n    }\n}"
+				}
+			]
+		}
+	]
+}
