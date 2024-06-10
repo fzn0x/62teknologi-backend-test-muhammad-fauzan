@@ -5,8 +5,8 @@ services:
     restart: always
     environment:
       POSTGRES_DB: aroundme
-      POSTGRES_USER: postgres # change this in production!
-      POSTGRES_PASSWORD: fauzan # change this in production!
+      POSTGRES_USER: fzn0x # change this in production!
+      POSTGRES_PASSWORD: forgrace # change this in production!
     ports:
       - 5432:5432
     volumes:

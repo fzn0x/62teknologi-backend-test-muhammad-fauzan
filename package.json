@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "dev": "bun run --watch ./src/index.ts",
-    "prod": "prisma migrate deploy && bun run ./src/index.ts",
+    "prod": "prisma generate && prisma migrate deploy && bun run ./src/index.ts",
     "swagger": "bun run --watch ./src/swagger.ts",
     "seed": "tsx prisma/seed.ts",
     "db:migrate": "prisma migrate dev",
